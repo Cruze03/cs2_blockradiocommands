@@ -1,13 +1,15 @@
-﻿namespace BlockRadioCommands;
+namespace BlockRadioCommands;
 
 using CounterStrikeSharp.API;
 using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Modules.Commands;
+using CounterStrikeSharp.API.Core.Attributes;
 
-public class PluginInfo : BasePlugin
+[MinimumApiVersion(5)]
+public class BlockRCommands : BasePlugin
 {
     public override string ModuleName => "Block Radio Commands";
-    public override string ModuleVersion => "0.1";
+    public override string ModuleVersion => "0.2";
     public override string ModuleAuthor => "Cruze";
     public override string ModuleDescription => "Blocks radio commands, player ping and chatwheel";
 
